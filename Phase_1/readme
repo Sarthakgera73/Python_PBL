@@ -1,0 +1,112 @@
+# Student Performance Prediction using Machine Learning
+
+## Objective
+
+The main aim of this project is to analyze student data and predict their final academic performance using machine learning techniques. In addition to prediction, the project also focuses on identifying the key factors that influence student results.
+
+---
+
+## Dataset Description
+
+The dataset contains various details about students, such as:
+
+* Age
+* Gender
+* Study Hours
+* Attendance
+* Previous Academic Performance
+* Final Grade (Target Variable)
+
+During the initial analysis, the dataset was found to have missing values, inconsistent entries, and some incorrect data, which required proper cleaning.
+
+---
+
+## Data Cleaning
+
+To make the dataset suitable for analysis, the following steps were performed:
+
+* Removed unnecessary columns such as Student_ID and Student_Name
+* Handled missing values using mean, median, and mode
+* Corrected data types (for example, converting Age to numeric format)
+* Removed unrealistic values such as negative or extremely high ages
+
+These steps ensured that the dataset became clean and consistent.
+
+---
+
+## Exploratory Data Analysis (EDA)
+
+EDA was performed to better understand the dataset using visualizations:
+
+* A correlation heatmap was used to study relationships between features
+* Distribution plots were used to understand the spread of the data
+
+### Key Observations:
+
+* Study hours and attendance show a positive relationship with final grades
+* Some features have weak relationships and may not significantly impact prediction
+
+---
+
+## Data Preprocessing
+
+The dataset was further prepared for machine learning:
+
+* Categorical variables were converted into numerical form using encoding techniques
+* Important features were selected using correlation and statistical methods
+* Data was scaled using StandardScaler to bring all features to a similar range
+
+---
+
+## Feature Selection
+
+Feature selection was carried out to retain only the most relevant features and remove less useful ones. This helps improve model performance and reduces overfitting.
+
+Techniques used:
+
+* Correlation analysis
+* SelectKBest
+
+---
+
+## Model Building
+
+A machine learning model was trained using the processed dataset to predict student performance.
+
+The models considered include:
+
+* Random Forest
+* Logistic Regression
+
+These models are commonly used for classification tasks and provide reliable results.
+
+---
+
+## Model Evaluation
+
+The model was evaluated using:
+
+* Accuracy Score
+* Confusion Matrix
+
+These metrics help in understanding how well the model performs on unseen data.
+
+---
+
+## Results and Conclusion
+
+The model was able to predict student performance with good accuracy. It was observed that factors such as study hours, attendance, and previous academic performance play a significant role in determining final grades.
+
+---
+
+## Future Improvements
+
+* Use a larger and more realistic dataset
+* Apply advanced models such as XGBoost
+* Develop a real-time prediction system
+
+---
+
+## Conclusion
+
+This project demonstrates how data cleaning, exploratory analysis, preprocessing, and machine learning techniques can be combined to extract meaningful insights and make accurate predictions.
